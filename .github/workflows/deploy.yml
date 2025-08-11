@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /Cheetah-Batch-Activity
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v4
